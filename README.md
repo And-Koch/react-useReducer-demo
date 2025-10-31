@@ -1,4 +1,5 @@
-<h1 align="center">🛍️ React Multi-Data Dashboard (Users / Products / Recipes)</h1>
+<h1 align="center">🛍️ REACT-useReducer-DEMO
+ (Users / Products / Recipes)</h1>
 
 <p align="center">
 A responsive React app that fetches real API data using <b>useReducer</b> & <b>React Router v6</b>, and displays Users, Products, and Recipes in a clean UI with animations.
