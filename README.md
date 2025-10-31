@@ -1,70 +1,146 @@
-# Getting Started with Create React App
+<h1 align="center">🛍️ React Multi-Data Dashboard (Users / Products / Recipes)</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+A responsive React app that fetches real API data using <b>useReducer</b> & <b>React Router v6</b>, and displays Users, Products, and Recipes in a clean UI with animations.
+</p>
 
-## Available Scripts
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18-blue?logo=react" />
+  <img src="https://img.shields.io/badge/State-useReducer-green" />
+  <img src="https://img.shields.io/badge/Router-React%20Router%20v6-orange" />
+  <img src="https://img.shields.io/badge/Animations-Framer--Motion-purple" />
+  <img src="https://img.shields.io/badge/API-DummyJSON-blue" />
+</p>
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✅ Fetch Users / Products / Recipes from API  
+✅ Global state with `useReducer`  
+✅ Loading states per each data type  
+✅ Dynamic routes with React Router  
+✅ Beautiful card UI + hover effects  
+✅ Framer Motion Homepage animation  
+✅ Clean project structure + modular code  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧠 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Tool | Purpose |
+|------|--------|
+React 18 | UI library  
+React Router v6 | Routing  
+useReducer | State management  
+Framer Motion | Animations  
+Fetch API | External data fetching  
+CSS modules | Styling  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🌍 API Endpoints Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Data | Endpoint |
+|------|---------|
+Users | `https://dummyjson.com/users`  
+Products | `https://dummyjson.com/products`  
+Recipes | `https://dummyjson.com/recipes`  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📦 Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+src/
+ ├─ AppRouter/
+ │   └─ AppRouter.jsx
+ ├─ components/
+ │   ├─ DataReducer/
+ │   │   └─ DataReducer.jsx
+ │   ├─ FetchProducts/
+ │   │   └─ FetchProducts.jsx
+ │   ├─ FetchRecipes/
+ │   │   └─ FetchRecipes.jsx
+ │   ├─ FetchUsers/
+ │   │   └─ FetchUsers.jsx
+ │   ├─ NavBar/
+ │   │   ├─ NavBar.jsx
+ │   │   └─ navBar.css
+ │   └─ Layout/
+ │       └─ Layout.jsx
+ ├─ Pages/
+ │   ├─ HomePage/
+ │   │   └─ HomePage.jsx
+ │   ├─ Users/
+ │   │   ├─ Users.jsx
+ │   │   └─ users.css
+ │   ├─ Products/
+ │   │   ├─ Products.jsx
+ │   │   └─ products.css
+ │   └─ Recipes/
+ │       ├─ Recipes.jsx
+ │       └─ recipes.css
+ ├─ App.js
+ ├─ App.css
+ ├─ index.js
+ └─ index.css
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Installation & Run
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Clone repository
+git clone https://github.com/YOUR-GITHUB-USERNAME/PROD-USER-REDUCER.git
 
-## Learn More
+cd PROD-USER-REDUCER
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Install dependencies
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Run app
+npm start
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📸 Screenshots (Add your own)
 
-### Analyzing the Bundle Size
+| Home | Users | Products | Recipes |
+|------|-------|----------|---------|
+| 🏠 | 👤 | 🛒 | 🍽️ |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🧭 Navigation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Route | Page |
+|------|------|
+`/` | Home (animated)  
+`/users` | Users list  
+`/products` | Products catalog  
+`/recipes` | Recipes viewer  
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ✅ Roadmap
 
-### Deployment
+- [ ] Add search / filtering
+- [ ] Add pagination
+- [ ] Global Error Boundary
+- [ ] Zustand / Redux version
+- [ ] Dark / Light mode
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 👨‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Andranik Kocharyan**
+
+GitHub: https://github.com/And-Koch  
+
+⭐ If you like this project — please give it a star!
+
+<p align="center">Built with ❤️ & React</p>
